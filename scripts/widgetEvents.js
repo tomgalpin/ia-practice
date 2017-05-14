@@ -55,10 +55,9 @@ var WidgetEvents = {
                                 '<span class="bold donation_num"></span>' +
                                 '<span class="bold">!</span>' +
                             '</h3>';
-        var savedContent = '<h4>Because there is not <br>' +
-                                'a Back End<br>' +
-                                'this has been saved to' +
-                                'LocalStorage' +
+        var savedContent = '<h4>Because there is not a Back End, <br>' +
+                                'this <span class="bold donation_num"></span><br>' +
+                                'has been saved to Local Storage!' +
                             '</h4>';
         var sharedContent = '<h4>This where the modal could <br>' +
                                 'show different social networks<br>' +

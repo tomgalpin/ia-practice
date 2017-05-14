@@ -9,6 +9,7 @@ var ClickEvents = {
         WidgetEvents.setModalContent('save');
         WidgetEvents.bodyNoScroll();
         WidgetEvents.showElement('.modal_wrapper');
+        WidgetEvents.setDonateValue('.widget_body form input[type="text"]', '.donation_num');
         WidgetEvents.setToLocalStorage('.widget_body form input[type="text"]');
     },
     clickShareButton: function() {
