@@ -1,0 +1,113 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="More Angular Practice">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>InvoiceASAP</title>
+	<link rel="shortcut icon" type="image/x-icon"  href="images/favicon.ico">
+
+	<link rel="stylesheet" href="styles/resets.css">
+	<link rel="stylesheet" href="styles/globals.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/js-result.css">
+	<link rel="stylesheet" href="styles/modal.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- js-result -->
+		<div class="js-result">
+			<h1>Unique Arrays</h1>
+			<div>
+				<p>Enter a comma separated array and click submit<br>to see a returned array of only unique values.</p>
+  				<form>
+					<input class="rounded" type="text" placeholder="e.g. [1, 3, 3, 5, 1, 'a', 'cat', '31', 31, 22, 5, 1, 'cat']">
+					<input class="rounded" type="submit" value="Submit Array">
+				</form>
+				<div class="array_output">
+					<span>[1, 3, 3, 5, 1, 'a', 'cat', '31', 31, 22, 5, 1, 'cat']<span>
+				</div>
+			</div>
+		</div>
+		<!-- js-result -->
+
+	  	<h1>Recreate this using HTML &amp; CSS</h1>
+  		<h3>S3 Image:</h3>
+  	  	<img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
+
+	  	<h3>Widget:</h3>
+	  	<!-- widget_wrapper -->
+	  	<div class="widget_wrapper">
+		  	<div class="widget_container">
+		  		<!-- widget_header -->
+		  		<div class="widget_header rounded">
+	  				<p><span class="bold">$167</span> still needed for this project</p>
+		  			<div class="bottom triangle">
+		  			</div>
+		  		</div>
+		  		<!-- widget_header -->
+		  		<!-- widget_body -->
+		  		<div class="widget_body">
+		  			<div class="progress_bar">
+		  				<div class="positive"></div>
+		  				<div class="negative"></div>
+	  				</div>
+	  				<div class="body_container">
+		  				<div class="body_text align_left">
+		  					<div>
+		  						<p><span class="bold orange">Only 3 days left </span>to fund this project.</p>
+		  					</div>
+				  			<div>
+				  				<p>Join the <span class="bold num_donors">42</span> other donors who have already supported this project. Every dollar helps.</p>
+				  			</div>
+				  		</div>
+			  			<div>
+			  				<form>
+			  					<div class="rounded align_left">
+				  						<span class="bold">$</span>
+										<input class="bold num_input" type="text" placeholder="50">
+									</div>
+								<input class="rounded" type="submit" value="Give Now">
+							</form>
+			  			</div>
+			  			<div class="clear"></div>
+			  		</div>
+		  			<div class="align_left why_give">
+		  				<div class="tooltip rounded">
+		  					<div class="tooltip_body">
+		  						<p>This could be a tooltip that is viewed on hover or click of the "Why...?" link.</p>
+		  					</div>
+		  					<div class="triangle"></div>
+		  				</div>
+		  				<a class="italic">Why give $50?</a>
+		  			</div>
+		  		</div>
+		  		<!-- widget_body -->
+				<!-- widget_bottom -->
+		  		<div class="widget_bottom">
+		  			<button class="rounded bold save_button" type="button">Save for later</button>
+					<button class="rounded bold share_button" type="button">Tell your friends</button>
+					<div class="clear"></div>
+		  		</div>
+		  		<!-- widget_bottom -->
+		  	</div>
+		</div>
+		<!-- widget_wrapper -->
+	</div>
+	<!-- modal_wrapper -->
+	<div class="modal_wrapper">
+		<div class="modal_backdrop"></div>
+		<div class="modal_body rounded">
+			<div class="modal_close">X</div>
+			<div class="modal_content"></div>
+		</div>
+	</div>
+	<!-- modal_wrapper -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/uniqueArrays.js"></script>
+	<script src="js/widgetEvents.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

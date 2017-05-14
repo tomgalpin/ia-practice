@@ -1,0 +1,198 @@
+/* COLORS:
+.blue {color: #20A1D4;}
+.green {color: #1CBC2C;}
+.orange {color: #EF5F3C;}
+.black {color: #424242;}
+.grey {color: #777;}
+.light_grey {color: #eaeaea;} */
+
+/******************************** */
+/********* Hover States ********* */
+/******************************** */
+form input[type="submit"]:hover,
+.why_give a:hover,
+.widget_bottom button,
+.modal_close {
+    cursor: pointer;
+}
+form input[type="submit"]:hover,
+.widget_bottom button:hover,
+.modal_close:hover {
+    opacity: 0.8;
+}
+.widget_bottom button:hover {
+    -moz-box-shadow:    inset 0 0 5px #777;
+    -webkit-box-shadow: inset 0 0 5px #777;
+    box-shadow:         inset 0 0 5px #777;
+}
+
+/************************ */
+/********* Body ********* */
+/************************ */
+.container,
+.js-result {
+  	margin: 2em auto;
+  	max-width: 630px;
+  	text-align: center;
+}
+.widget_wrapper {
+	width: 303px;
+	margin: 0 auto;
+}
+.widget_container {
+	padding: 20px;
+}
+.widget_container div {
+    position: relative;
+}
+
+/********************************* */
+/********* Widget Header ********* */
+/********************************* */
+.widget_header {
+	background-color: #424242;
+	color: #fff;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 11px;
+}
+.widget_header p {
+    font-size: 12px;
+}
+.widget_header .bottom.triangle {
+    position: absolute;
+    right: 32px;
+    border-width: 6px 4.5px 0 4.5px;
+    border-color: #424242 transparent transparent transparent;
+}
+
+/******************************* */
+/********* Widget Body ********* */
+/******************************* */
+.widget_body {
+    border: 1px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 12px;
+}
+.widget_body p,
+.widget_body span {
+    color: #898989;
+}
+.widget_body span.orange {
+    color: #EF5F3C;
+}
+.widget_body p {
+    font-size: 12px;
+}
+.progress_bar {
+    height: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.progress_bar div {
+    height: 100%;
+    float: left;
+}
+.progress_bar .positive {
+    background-color: #EF5F3C;
+    width: 75%;
+}
+.progress_bar .negative {
+    background-color: #FAFAFA;
+    width: 25%;
+}
+.body_container {
+    margin: 15px 18px 5px 18px;
+}
+.body_text div {
+    margin-bottom: 15px;
+}
+form div,
+form input[type="submit"] {
+    width: 103px;
+    line-height: 44px;
+    float: left;
+}
+form div {
+    height: 45px;
+    border: 1px solid #eaeaea;
+    margin-right: 15px;
+}
+form span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+form input[type="text"] {
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+    margin-top: -4px;
+}
+form input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #424242;
+}
+form input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+    color: #424242;
+}
+form input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+    color: #424242;
+}
+form input[type="text"]:-moz-placeholder { /* Firefox 18- */
+    color: #424242;
+}
+form input[type="submit"] {
+    height: 42px;
+    background-color: #1CBC2C;
+    color: #FFF;
+    border: 1px solid #1FAF2D;
+    border-bottom: 2px solid #1FAF2D;
+}
+.why_give {
+    margin: 0px 0 20px 20px;
+}
+.why_give a{
+    display: inline;
+    text-decoration: none;
+    font-size: 12px;
+    color: #20A1D4;
+}
+
+/*************************** */
+/********* Tooltip ********* */
+/*************************** */
+.widget_container .tooltip {
+    display: none;
+    position: absolute;
+    top: -90px;
+    left: -15px;
+    width: 125px;
+    border: 1px solid #424242;
+    background: #ffffff;
+    z-index: 1000;
+}
+
+.tooltip .tooltip_body {
+    margin: 10px;
+    line-height: 1.1;
+}
+.tooltip .triangle {
+    position: absolute;
+    left: 50px;
+    border-width: 6px 4.5px 0 4.5px;
+    border-color: #424242 transparent transparent transparent;
+}
+
+/********************************** */
+/********* Bottom Buttons ********* */
+/********************************** */
+.widget_bottom button {
+    float: left;
+    width: 122px;
+    height: 35px;
+    color: #777777;
+    background-color: #FAFAFA;
+    border: 1px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
+}
+.widget_bottom button:first-child {
+    margin-right: 17px;
+}
