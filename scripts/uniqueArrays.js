@@ -74,7 +74,7 @@ var Uniques = {
     setArrayForDom: function(array){
         /**
         * Parses array back with commas, spaces and brackets for front end.
-        * @param {array
+        * @param {array}
         * @return {string}
         */
 
