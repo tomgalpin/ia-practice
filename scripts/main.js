@@ -20,39 +20,18 @@ $(document).ready(function(){
 	});
 
 	// Button Click Events
-	$('.widget_body form input[type="submit"]').click(function(){
-		WidgetEvents.setModalContent('donate');
-		$('body').addClass('no-scroll');
-		WidgetEvents.showElement('.modal_wrapper');
-	    WidgetEvents.setDonateValue('.widget_body form input[type="text"]', '.donation_num');
-	});
+	$('.widget_body form input[type="submit"]').click(ClickEvents.clickDonateSubmit);
 
-	$('.save_button').click(function(){
-		WidgetEvents.setModalContent('save');
-		$('body').addClass('no-scroll');
-		WidgetEvents.showElement('.modal_wrapper');
-		WidgetEvents.setToLocalStorage('.widget_body form input[type="text"]');
-	});
+	$('.save_button').click(ClickEvents.clickSaveButton);
 
-	$('.share_button').click(function(){
-		WidgetEvents.setModalContent('share');
-		$('body').addClass('no-scroll');
-		WidgetEvents.showElement('.modal_wrapper');
-	});
+	$('.share_button').click(ClickEvents.clickShareButton);
 
 	// Restrict to Number Imputs
 	$(".num_input").keydown(function (e) {
-		WidgetEvents.isTooLong(e, '.widget_body form input[type="text"]');
-		WidgetEvents.isCurrencyValue(e);
+		ClickEvents.restrictToNums(e);
 	});
 
 	// Close Modal
-	$('.modal_close').click(function(){
-		$('body').removeClass('no-scroll');
-		WidgetEvents.hideElement('.modal_wrapper');
-	});
-	$('.modal_backdrop').click(function(){
-		$('body').removeClass('no-scroll');
-		WidgetEvents.hideElement('.modal_wrapper');
-	});
+	$('.modal_close').click(ClickEvents.closeModal);
+	$('.modal_backdrop').click(ClickEvents.closeModal);
 });
