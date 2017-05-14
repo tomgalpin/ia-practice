@@ -11,6 +11,7 @@ h3 {
 /*************************** */
 /********* Globals ********* */
 /*************************** */
+.no-scroll { overflow: hidden }
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 p {

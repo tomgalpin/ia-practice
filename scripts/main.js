@@ -22,18 +22,21 @@ $(document).ready(function(){
 	// Button Click Events
 	$('.widget_body form input[type="submit"]').click(function(){
 		WidgetEvents.setModalContent('donate');
+		$('body').addClass('no-scroll');
 		WidgetEvents.showElement('.modal_wrapper');
 	    WidgetEvents.setDonateValue('.widget_body form input[type="text"]', '.donation_num');
 	});
 
 	$('.save_button').click(function(){
 		WidgetEvents.setModalContent('save');
+		$('body').addClass('no-scroll');
 		WidgetEvents.showElement('.modal_wrapper');
 		WidgetEvents.setToLocalStorage('.widget_body form input[type="text"]');
 	});
 
 	$('.share_button').click(function(){
 		WidgetEvents.setModalContent('share');
+		$('body').addClass('no-scroll');
 		WidgetEvents.showElement('.modal_wrapper');
 	});
 
@@ -45,9 +48,11 @@ $(document).ready(function(){
 
 	// Close Modal
 	$('.modal_close').click(function(){
+		$('body').removeClass('no-scroll');
 		WidgetEvents.hideElement('.modal_wrapper');
 	});
 	$('.modal_backdrop').click(function(){
+		$('body').removeClass('no-scroll');
 		WidgetEvents.hideElement('.modal_wrapper');
 	});
 });
