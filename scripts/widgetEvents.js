@@ -59,7 +59,7 @@ var WidgetEvents = {
                                 'this <span class="bold donation_num"></span><br>' +
                                 'has been saved to Local Storage!' +
                             '</h4>';
-        var sharedContent = '<h4>This where the modal could <br>' +
+        var sharedContent = '<h4>This is where the modal could <br>' +
                                 'show different social networks<br>' +
                                 'to share to.' +
                             '</h4>';
