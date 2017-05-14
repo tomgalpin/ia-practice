@@ -1,5 +1,7 @@
 ## Overview
 
+Published at:  https://tomgalpin.github.io/ia-practice/
+
 This is a practice application with straight JS, JQuery, HTML, & CSS.
 
 # Goals & Notes:
