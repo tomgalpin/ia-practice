@@ -11,9 +11,10 @@ var Uniques = {
         * @param {array}
         * @return {array}
         */
+
         return array.filter(this.isItemUnique);
     },
-    isItemUnique: function(array, index, value){
+    isItemUnique: function(value, index, array){
         /**
         * Checks if index value in array is unique.
         * Called be this.returnUniques()
@@ -23,6 +24,7 @@ var Uniques = {
         * @param {value}
         * @return {boolean}
         */
+
         return array.indexOf(value) === index;
     },
     getArray: function(element){
@@ -31,6 +33,7 @@ var Uniques = {
         * @param {element} element = '.js-result input[type="text"]'
         * @return {string}
         */
+
         var inputVal = $(element).val();
 
         return this.parseArray(inputVal);
@@ -42,6 +45,7 @@ var Uniques = {
         * @param {array} stringedArray
         * @return {array}
         */
+
         // remove all spaces first:
         stringedArray = stringedArray.replace(/\s/g,'');
         // check if user added brackets, if so remove them:
@@ -61,6 +65,7 @@ var Uniques = {
         * @param {element} outputElement = '.array_output span'
         * @return {function}
         */
+
         var array       = this.getArray(inputElement),
             dommedArray = this.setArrayForDom(array);
 
@@ -72,6 +77,7 @@ var Uniques = {
         * @param {array
         * @return {string}
         */
+
         var uniques         = this.returnUniques(array),
             stringedArray   = "[" + uniques.toString() + "]",
             addedSpaces     = stringedArray.replace(/,/g , ", ");
@@ -84,6 +90,7 @@ var Uniques = {
         * @param {element} = '.array_output span'
         * @return {function}
         */
+
         var defaultArray    = [1, 3, 5, 3, 7, 3, 1, 1, 5],
         dommedArray         = this.setArrayForDom(defaultArray);
 
